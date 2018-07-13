@@ -38,6 +38,9 @@ public:
 	// search the erea
 	void SearchErea();
 
+	// TEMP::
+	Weapons* weapons;
+
 private:
 
 	// random fill the stats

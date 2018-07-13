@@ -108,6 +108,7 @@ int main() {
 	// Show the winner
 	cout << "The winner is: " << "\n";
 	cout << "Person: " << persons[0]->personID << " | " << persons[0]->health << " : health left" << "\n";
+	cout << "Person: " << persons[0]->personID << " | " << "Used: " << persons[0]->weapon.name << "\n";
 
 
 

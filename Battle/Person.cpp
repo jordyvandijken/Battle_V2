@@ -3,10 +3,12 @@
 int Person::id = 0;
 
 Person::Person() {
+	weapons = new Weapons();
+
 	// random fill the stats
 	this->FillStats();
 
-	weapon = Weapons::fist;
+	weapon = weapons->GetWeapon("Fist");
 
 	// set the persons id
 	personID = id;
@@ -92,7 +94,7 @@ void Person::SearchErea() {
 	int randomEvent = rand() % 2 + 1;
 
 	// if the person finds a random weapon
-	Weapon randomFoundWeapon = Weapons::RandomWeapon();
+	Weapon randomFoundWeapon = weapons->RandomWeapon();
 
 	switch (randomEvent)
 	{
